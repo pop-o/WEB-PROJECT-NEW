@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary: linear-gradient(to right, #121212, rgb(84, 4, 67));;
+    --secondary: #643A6B;
+    --extra1: #957777;
+    --extra2:#B0A4A4;
+    --extra3: blueviolet;
+    --font-poppins:'Poppins', sans-serif;
+    --font-roboto-slab:'Roboto Slab', serif;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-poppins);
 }
 body{
     display: flex;
