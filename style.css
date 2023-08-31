@@ -193,40 +193,89 @@ header li:hover {
     text-align: center;
     max-width: 900px;
 }
-
+.recipe h1{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
 .whole{
     max-width: 1440px;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 350px;
     background-color: white;
-    display: flex;
     margin: 0 auto;
+    display: flex;
     place-content:center;    
     align-items: center;
     justify-items: center;
     /* flex-direction: column; */
 }
+
 .recipe-container{
     position: relative;
     display: flex;
     width: 90%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     place-content:center;    
     align-items: center;
     justify-content: space-evenly;
     
-    height: 400px;
+    height: 300px;
+    
 
 
 }
 .recipe-box{
     position: relative;
-    height: 300px;
-    border: 1px solid black;
+    display: block;
+    height: 250px;
+    /* border: 1px solid black; */
     width: 250px;
-}
+   
 
+    
+
+}
+.recipe-image img{
+    /* top: -25px; */
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+
+}
+.recipe-image img:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+    margin: 4px;
+
+}
+.recipe-name{
+    position: relative;
+    display: flex; 
+    /* top: 25px;  */
+    z-index: 1;
+    /* float: left; */
+}
+.recipe-name a{
+    text-decoration: none;
+    color: black;
+}
+.view-recipe{
+    width: 100%;
+    position: relative;
+    display: flex;
+    place-content:end;
+    /* top: -25px; */
+ 
+
+}
+.view-recipe a{
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+}
 
 
 /* footer css */
