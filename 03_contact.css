@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-poppins:'Poppins', sans-serif;
+    --primary: #322653;
+    --secondary: #8062D6;
+    --hover: #9288F8;
+    --text: #FFD2D7;
+}
+body{
+    font-family:var(--font-poppins) ;
+    /* background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75), url(./Images/aesthetic.jpg)); */
+    background-image: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+
+header{
+    background-image: linear-gradient(to right, var(--primary), var(--secondary));
+    margin-bottom: 40px;
+}
+
+.navheader {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    place-items: center;
+    justify-content: right;
+    height: 100%;
+    width: 50%;
+    
+}
+
+.logo{
+    display: flex;
+    place-items: center;
+}
+.logo a{
+    display: flex;
+    align-items: center; 
+}
+.logo img {
+   width: 50px;
+   padding: 2px;
+   border: none;
+}
+
+.logo img:hover{
+    transition: 0.4S;
+    transform: scale(1.2);
+}
+
+header ul {
+    display: flex;
+    place-items: center;
+    list-style: none;
+    user-select: none;
+    font-size: 1.2rem;
+}
+
+header ul li a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+}
+
+header ul li {
+    border: 1px solid transparent;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+header ul li::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 0px;
+    background: var(--text);
+    left: 0px;
+    bottom: 1px;
+}
+
+header li:hover::after {
+    width: 100%;
+    transition: 0.4s;
+} 
+
+
+.contact{
+    width: 100%;
+}
+
+.contact .title h1{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contact .title p{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+h5,h1,p, h2{
+    color: var(--text)
+}
+
+.contact .box .image{
+    width: 20%
+}
+
+.contact .box .image img{
+    width: 90%;
+    height: 90%;
+    justify-content: space-between;
+}
+
+.box .image img:hover{
+    transition: 0.4S;
+    transform: scale(1.2);
+}
+
+.contact .box{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.box .left{
+    width: 30%;
+    min-height: 300px;
+    color: var(--text);
+    padding: 10px;
+}
+
+.box .left .text h3:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+    color: white;
+}
+
+.left h3{
+    margin-bottom: 2px;
+}
+
+.left .content1{
+    display: flex;
+    position: relative;
+}
+
+.content1 .icon{
+    padding-top: 2px;
+}
+
+.socials{
+    margin-top: 20px;
+    color: var(--text);
+}
+
+.socials ul{
+    list-style: none;
+    display: flex;
+    padding: 2px;
+}
+
+.socials ul li{
+    padding: 10px;
+}
+
+.socials ul li a{
+    color: var(--text)
+}
+
+.socials ul li a:hover{
+    color: var(--hover);
+    transition: 0.1s;
+}
+.box .right{
+    color: var(--text);
+    /* border: 2px solid var(--text); */
+    width: 30%;
+    min-height: 300px;
+    position: relative;
+    padding: 10px;
+}
+
+.right h3{
+    margin-bottom: 2px;
+}
+
+.right .content2{
+    position: relative;
+    
+}
+
+.content2 label{
+    position: relative;
+    display: flex;
+}
+
+.box .form label{
+    padding:2px;
+}
+
+.box .form input, textarea{
+    position: relative;
+    display: flex;
+    width: 70%;
+    padding: 3px 0;
+    margin-top: 3px;
+    border: none;
+    border-bottom: 1px solid var(--text);;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+.box .form textarea{
+    padding: 0;
+    height: 4rem;
+}
+
+ input{
+    width: 70%;
+    height: 20px;    
+    border: none;
+    outline: none;
+}
+
+form .content2 .buttons button{
+    /* position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin-top: 10px;
+    border-radius: 20%;
+    color: var(--white);
+    background-color: var(--secondary);
+    padding: 10px;
+    outline: none;
+    border: 1px solid var(--text);
+}
+
+.content2 .buttons button:hover{
+    background-color: var(--hover);
+    transition: 0.2s;
+}
+
