@@ -322,7 +322,26 @@ header li:hover {
     color: black;
 }
 
+.about{
+    max-width: 1440px;
+    
+    margin: 0 auto;
+    
+}
 
+.about-whole{
+    max-width: 1440px;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    
+    margin: 0 auto;
+    display: flex;
+    place-content:center;    
+    align-items: center;
+    justify-items: center;
+    /* flex-direction: column; */
+}
 /* footer css */
 
 
